@@ -29,3 +29,15 @@ summarise(mtcars, media = mean(mpg))
 ### Também tally().
 
 count(mtcars, cyl)
+
+# Group Cases ------------------------------------------------------------------------------------------------------------------------------
+
+## Função group_by:
+
+### Use 'group_by' para criar uma agrupada cópia de uma tabela agrupada
+### por colunas. As funções do dplyr irão manipular cada grupo separadamente
+### e combinar os resultados.
+
+mtcars %>%
+  group_by(cyl) %>%
+  summarise(media = mean(mpg))
