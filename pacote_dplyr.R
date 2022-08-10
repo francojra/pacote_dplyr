@@ -41,3 +41,20 @@ count(mtcars, cyl)
 mtcars %>%
   group_by(cyl) %>%
   summarise(media = mean(mpg))
+
+## Função rowwise:
+
+### Agrupa dados em individuais linhas. Funções do dplyr irão computar
+### os resultados para cada linha. Também aplicar funções para list-columns.
+
+starwars %>%
+  rowwise() %>%
+  mutate(film_count = length(films)) %>%
+  View()
+
+## Função ungroup:
+
+### Retorna uma cópia de tabela ungrouped.
+
+ungroup(mtcars) %>%
+  View()
