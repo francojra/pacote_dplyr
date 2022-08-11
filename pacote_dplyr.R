@@ -94,3 +94,9 @@ slice_sample(mtcars, n = 5, replace = TRUE)
 ### Seleciona linhas com os mais baixos e mais altos valores.
 
 slice_min(mtcars, mpg, prop = 0.25)
+
+## Função slice_head e slice_tail:
+
+### Seleciona as primeiras ou últimas linhas.
+
+slice_head(mtcars, n = 5)
