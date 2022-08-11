@@ -75,3 +75,9 @@ filter(mtcars, mpg > 20)
 ### Remove linhas com valores duplicados.
 
 distinct(mtcars, gear)
+
+## Função slice:
+
+### Seleciona linhas por posição.
+
+slice(mtcars, 10:15)
