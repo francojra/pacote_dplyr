@@ -81,3 +81,16 @@ distinct(mtcars, gear)
 ### Seleciona linhas por posição.
 
 slice(mtcars, 10:15)
+
+## Função slice_sample:
+
+### Seleciona linhas randomicamente. Usa 'n' para selecionar um número de
+### linhas.
+
+slice_sample(mtcars, n = 5, replace = TRUE)
+
+## Função slice_min e slice_max:
+
+### Seleciona linhas com os mais baixos e mais altos valores.
+
+slice_min(mtcars, mpg, prop = 0.25)
