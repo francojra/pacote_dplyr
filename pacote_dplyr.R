@@ -128,3 +128,11 @@ slice_head(mtcars, n = 5)
 
 arrange(mtcars, mpg)
 arrange(mtcars, desc(mpg))
+
+## Add cases
+
+## Função add_row:
+
+### Adiciona uma ou mais linhas para a tabela.
+
+add_row(cars, speed = 1, dist = 1)
