@@ -61,7 +61,9 @@ ungroup(mtcars) %>%
 
 # Manipulate Cases -------------------------------------------------------------------------------------------------------------------------
 
-### Extração de casos em linhas. As funções de linhas retornam um subconjuntos
+## Extração de casos em linhas. 
+
+### As funções de linhas retornam um subconjuntos
 ### de linhas como uma nova tabela.
 
 ## Função filter:
@@ -100,3 +102,29 @@ slice_min(mtcars, mpg, prop = 0.25)
 ### Seleciona as primeiras ou últimas linhas.
 
 slice_head(mtcars, n = 5)
+
+# Operadores lógicos e booleanos para usar com a função filter -----------------------------------------------------------------------------
+
+## ==
+## !=
+## <
+## >
+## <=
+## >=
+## is.na()
+## !is.na()
+## %in%
+## !
+## |
+## &
+## xor()
+
+## Arrange cases
+
+## Função arrange:
+
+### Ordena linhas por valores de uma coluna ou colunas (do menor para o
+### maior). Use desc() para ordenar do maior para o menor valor.
+
+arrange(mtcars, mpg)
+arrange(mtcars, desc(mpg))
