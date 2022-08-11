@@ -58,3 +58,20 @@ starwars %>%
 
 ungroup(mtcars) %>%
   View()
+
+# Manipulate Cases -------------------------------------------------------------------------------------------------------------------------
+
+### Extração de casos em linhas. As funções de linhas retornam um subconjuntos
+### de linhas como uma nova tabela.
+
+## Função filter:
+
+### Extrai linhas que atingem o critério lógico.
+
+filter(mtcars, mpg > 20)
+
+## Função distinct:
+
+### Remove linhas com valores duplicados.
+
+distinct(mtcars, gear)
