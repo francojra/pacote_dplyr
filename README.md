@@ -14,3 +14,10 @@
 - Função group_by;
 - Função rowwise;
 - Função ungroup.
+4. Manipulate Cases:
+- Função filter;
+- Função distinct;
+- Função slice;
+- Função slice_sample;
+- Função slice_min e slice_max;
+- Função slice_head e slice_tail.
