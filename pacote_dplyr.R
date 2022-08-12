@@ -149,3 +149,9 @@ add_row(cars, speed = 1, dist = 1)
 ### Extrai colunas como vetores, por nome ou índice.
 
 pull(mtcars, wt)
+
+## Funão select:
+
+### Extrai colunas como uma tabela.
+
+select(mtcars, mpg, wt)
