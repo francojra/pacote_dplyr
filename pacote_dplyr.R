@@ -161,3 +161,13 @@ select(mtcars, mpg, wt)
 ### Move colunas para uma nova posição.
 
 relocate(mtcars, mpg, cyl, .after = last_col())
+
+# Use esses auxiliares com select() e across() ---------------------------------------------------------------------------------------------
+
+select(mtcars, contains(match = "carb"))
+
+select(mtcars, ends_with(match = "yl"))
+
+select(mtcars, starts_with(match = "c"))
+
+select(mtcars, num_range("carb", 0:4))
