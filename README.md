@@ -21,3 +21,8 @@
 - Função slice_sample;
 - Função slice_min e slice_max;
 - Função slice_head e slice_tail.
+5. Manipulate Variables:
+- Função pull;
+- Funão select;
+- Função relocate.
+6. Use esses auxiliares com select() e across()
