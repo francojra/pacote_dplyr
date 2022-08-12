@@ -136,3 +136,16 @@ arrange(mtcars, desc(mpg))
 ### Adiciona uma ou mais linhas para a tabela.
 
 add_row(cars, speed = 1, dist = 1)
+
+# Manipulate Variables ---------------------------------------------------------------------------------------------------------------------
+
+## Extract variables
+
+### Funções para colunas retorna um conjunto de colunas como um novo vetor
+### ou tabela.
+
+## Função pull:
+
+### Extrai colunas como vetores, por nome ou índice.
+
+pull(mtcars, wt)
