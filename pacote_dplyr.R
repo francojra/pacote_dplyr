@@ -155,3 +155,9 @@ pull(mtcars, wt)
 ### Extrai colunas como uma tabela.
 
 select(mtcars, mpg, wt)
+
+## Função relocate:
+
+### Move colunas para uma nova posição.
+
+relocate(mtcars, mpg, cyl, .after = last_col())
