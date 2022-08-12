@@ -25,4 +25,11 @@
 - Função pull;
 - Funão select;
 - Função relocate.
-6. Use esses auxiliares com select() e across()
+6. Use esses auxiliares com select() e across();
+7. Manipular múltiplas variáveis de uma vez:
+- Função summarise;
+- Função transmute.
+8. Criar novas variáveis:
+- Função mutate;
+- Função transmute;
+- Função rename.
