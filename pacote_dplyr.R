@@ -194,3 +194,19 @@ select(mtcars, mpg:hp) # Seleciona colunas entre 'mpg' e 'hp'.
 select(mtcars, -gear) # Seleciona todas as colunas, menos a variável 'gear'
 
 select(mtcars, everything())
+
+## Manipular múltiplas variáveis de uma vez.
+
+## Função summarise:
+
+### Resume ou modifica (mutate) múltiplas colunas da mesma forma.
+
+summarise(mtcars, across(everything(), mean))
+
+## Função transmute:
+
+### Computa colunas em linhas.
+
+transmute(rowwise(mtcars), total = sum(c_across(1:2))) # Soma cada linha
+# das colunas de 1 a 2 (1:2).
+       
