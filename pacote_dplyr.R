@@ -170,4 +170,27 @@ select(mtcars, ends_with(match = "yl"))
 
 select(mtcars, starts_with(match = "c"))
 
-select(mtcars, num_range("carb", 0:4))
+select(mtcars, num_range("", 1:5))
+
+select(mtcars, all_of("cyl")) #  É para uma selecção rigorosa. Se 
+# alguma das variáveis do vector de caracteres estiver em falta, 
+# é atirado um erro.
+
+vars <- c("Sepal.Length", "Sepal.Width")
+iris %>% select(all_of(vars))
+starwars %>% select(all_of(vars)) # Se qualquer variável estiver faltando,
+# um erro é acusado.
+
+select(mtcars, any_of("gear", vars = NULL)) # Doesn't check for 
+# missing variables. It is especially useful with negative selections,
+# when you would like to make sure a variable is removed.
+
+iris %>% select(-any_of(vars))
+
+select(mtcars, matches("c")) # Retorna todas as variaveis que apresentam a letra "c".
+
+select(mtcars, mpg:hp) # Seleciona colunas entre 'mpg' e 'hp'.
+
+select(mtcars, -gear) # Seleciona todas as colunas, menos a variável 'gear'
+
+select(mtcars, everything())
