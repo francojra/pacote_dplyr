@@ -209,4 +209,29 @@ summarise(mtcars, across(everything(), mean))
 
 transmute(rowwise(mtcars), total = sum(c_across(1:2))) # Soma cada linha
 # das colunas de 1 a 2 (1:2).
-       
+
+# Criar novas variáveis --------------------------------------------------------------------------------------------------------------------
+
+### Aplica funções vetorizadas para as colunas. Funções vetorizadas
+### tomam vetores como input e retorna vetores de mesmo comprimento
+### como output.
+
+## Função mutate:
+
+### Computa novas colunas.
+
+mutate(mtcars, gpm = 1/mpg)
+
+## Função transmute:
+
+### Computa novas colunas e corta outras.
+
+transmute(mtcars, gpm = 1/mpg)
+
+## Função rename:
+
+### Renomeia colunas. Use rename_with para renomear com uma função.
+
+rename(cars, distance = dist)
+rename_with(cars, toupper)
+rename_with(iris, ~ tolower(gsub(".", "_", .x, fixed = TRUE)))
