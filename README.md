@@ -37,3 +37,4 @@
 - Para usar com summarise():
 * count;
 * n_distinct;
+* sum(!is.na()).
