@@ -279,3 +279,21 @@ summarise(iris, last(Sepal.Length))
 ## nth(): retorna o valor da nth linha.
 
 summarise(iris, nth(Sepal.Length, 11))
+
+## Rank: retorna quantis, valores máximos e mínimos
+
+summarise(iris, quantile(Sepal.Length))
+
+summarise(iris, min(Sepal.Length))
+
+summarise(iris, max(Sepal.Length))
+
+## Spread:
+
+summarise(iris, IQR(Sepal.Length))
+
+summarise(iris, mad(Sepal.Length))
+
+summarise(iris, sd(Sepal.Length))
+
+summarise(iris, var(Sepal.Length))
