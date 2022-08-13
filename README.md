@@ -37,4 +37,11 @@
 - Para usar com summarise():
 * n();
 * n_distinct();
-* sum(!is.na()).
+* sum(!is.na());
+* mean();
+* median();
+* first();
+* last();
+* nth();
+* Funções rank;
+* Funções spread.
