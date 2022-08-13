@@ -195,7 +195,7 @@ select(mtcars, -gear) # Seleciona todas as colunas, menos a variável 'gear'
 
 select(mtcars, everything())
 
-## Manipular múltiplas variáveis de uma vez.
+# Manipular múltiplas variáveis de uma vez -------------------------------------------------------------------------------------------------
 
 ## Função summarise:
 
@@ -235,3 +235,19 @@ transmute(mtcars, gpm = 1/mpg)
 rename(cars, distance = dist)
 rename_with(cars, toupper)
 rename_with(iris, ~ tolower(gsub(".", "_", .x, fixed = TRUE)))
+
+# Summary functions ------------------------------------------------------------------------------------------------------------------------
+
+## Para usar com summarise()
+
+### summarise() aplica funções summary para colunas para criar uma nova
+### tabela. Funções summary toma vetores como input e retorna simples
+### valores como output. 
+
+## Count: número de valores/linhas.
+
+summarise(iris, n())
+
+## n_distinct: número de valores únicos.
+
+summarise(iris, n_distinct())
