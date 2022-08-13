@@ -244,10 +244,14 @@ rename_with(iris, ~ tolower(gsub(".", "_", .x, fixed = TRUE)))
 ### tabela. Funções summary toma vetores como input e retorna simples
 ### valores como output. 
 
-## Count: número de valores/linhas.
+## count: número de valores/linhas.
 
 summarise(iris, n())
 
 ## n_distinct: número de valores únicos.
 
 summarise(iris, n_distinct())
+
+## sum(!is.na()): número de linhas sem NAs.
+
+summarise(iris, sum(!is.na(Species)))
