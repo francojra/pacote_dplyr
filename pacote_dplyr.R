@@ -238,13 +238,13 @@ rename_with(iris, ~ tolower(gsub(".", "_", .x, fixed = TRUE)))
 
 # Summary functions ------------------------------------------------------------------------------------------------------------------------
 
-## Para usar com summarise()
-
-### summarise() aplica funções summary para colunas para criar uma nova
+## Para usar com summarise(). summarise() aplica funções summary para colunas para criar uma nova
 ### tabela. Funções summary toma vetores como input e retorna simples
 ### valores como output. 
 
-## count: número de valores/linhas.
+## count
+
+## n(): número de valores/linhas.
 
 summarise(iris, n())
 
@@ -255,3 +255,27 @@ summarise(iris, n_distinct())
 ## sum(!is.na()): número de linhas sem NAs.
 
 summarise(iris, sum(!is.na(Species)))
+
+## Position
+
+## mean(): calcula a média, também mean(!is.nas()).
+
+summarise(iris, mean(Petal.Length))
+
+## median(): calcula a mediana.
+
+summarise(iris, median(Sepal.Length))
+
+## Order
+
+## first(): retorna primeiro valor.
+
+summarise(iris, first(Sepal.Length))
+
+## last(): retorna último valor.
+
+summarise(iris, last(Sepal.Length))
+
+## nth(): retorna o valor da nth linha.
+
+summarise(iris, nth(Sepal.Length, 11))
