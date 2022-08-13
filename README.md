@@ -35,6 +35,6 @@
 - Função rename.
 9. Summary functions:
 - Para usar com summarise():
-* count;
-* n_distinct;
+* n();
+* n_distinct();
 * sum(!is.na()).
