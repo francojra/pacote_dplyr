@@ -33,3 +33,7 @@
 - Função mutate;
 - Função transmute;
 - Função rename.
+9. Summary functions:
+- Para usar com summarise():
+* count;
+* n_distinct;
