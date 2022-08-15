@@ -304,4 +304,11 @@ summarise(iris, var(Sepal.Length))
 ### uma variável fora das colunas. Para trabalhar com rownames,
 ### primeiro mova elas para uma coluna.
 
+## Função rownames_to_column:
 
+### Mone nomes de linhas para uma coluna.
+
+library(tibble)
+
+a <- rownames_to_column(mtcars, var = "C")
+a
