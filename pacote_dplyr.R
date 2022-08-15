@@ -324,3 +324,9 @@ column_to_rownames(a, var = "C")
 ### Verifica se existe linhas fora de uma coluna.
 
 has_rownames(mtcars)
+
+## Função remove_rownames:
+
+### Remove as linhas que se apresentam fora de uma coluna.
+
+remove_rownames(mtcars)
