@@ -358,7 +358,7 @@ starwars %>%
 ## unidas por uma id. Então verifique se ambas as tabelas estão ordenadas
 ## antes de uni-las.
 
-# dados relacionais
+# Dados relacionais
 
 ### Une as tabelas pelas colunas em comuns. Corresponde os valores com as
 ### linhas correspondentes. Cada tipo de 'join' mantem uma combinação diferente.
