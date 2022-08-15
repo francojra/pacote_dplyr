@@ -45,3 +45,10 @@
 * nth();
 * Funções rank;
 * Funções spread.
+10. Row Names:
+- Função rownames_to_column;
+- Função column_to_rownames;
+- Função has_rownames;
+- Função remove_rownames.
+11. Funções vetorizadas:
+- Função case_when.
