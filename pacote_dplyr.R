@@ -330,3 +330,22 @@ has_rownames(mtcars)
 ### Remove as linhas que se apresentam fora de uma coluna.
 
 remove_rownames(mtcars)
+
+# Funções vetorizadas ----------------------------------------------------------------------------------------------------------------------
+
+### Usado com mutate() e transmute() aplica vetorizadas funções para
+### colunas, para criar novas colunas. Funções vetorizadas toma vetores
+### como input e retorna vetores de mesmo comprimento como output.
+
+## Função case_when:
+
+### Multi-case com if_else().
+
+library(tidyverse)
+
+starwars %>%
+  mutate(type = case_when(height > 200 | mass > 200 ~ "large",
+                          species == "Droid" ~ "robot",
+                          TRUE ~ "other")) %>%
+  view()
+  
