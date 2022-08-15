@@ -357,3 +357,12 @@ starwars %>%
 ## única. O comprimento das colunas deve ser igual. Colunas não serão
 ## unidas por uma id. Então verifique se ambas as tabelas estão ordenadas
 ## antes de uni-las.
+
+# dados relacionais
+
+### Une as tabelas pelas colunas em comuns. Corresponde os valores com as
+### linhas correspondentes. Cada tipo de 'join' mantem uma combinação diferente.
+
+## Função left_join: junta valores correspondentes de y a x.
+
+## Função right_join: junta valores correspondentes de x a y.
