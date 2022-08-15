@@ -297,3 +297,11 @@ summarise(iris, mad(Sepal.Length))
 summarise(iris, sd(Sepal.Length))
 
 summarise(iris, var(Sepal.Length))
+
+# Row Names --------------------------------------------------------------------------------------------------------------------------------
+
+### Dados tidy não usa nome de linhas (rownames), que armazena 
+### uma variável fora das colunas. Para trabalhar com rownames,
+### primeiro mova elas para uma coluna.
+
+
