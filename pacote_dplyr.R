@@ -366,3 +366,8 @@ starwars %>%
 ## Função left_join: junta valores correspondentes de y a x.
 
 ## Função right_join: junta valores correspondentes de x a y.
+
+## Função inner_join: une os dados e retem apenas linhas com valores
+## correspondentes a ambas tabelas.
+
+## Função full_join: une os dados e retem todos os valores e linhas.
