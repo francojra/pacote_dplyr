@@ -348,4 +348,12 @@ starwars %>%
                           species == "Droid" ~ "robot",
                           TRUE ~ "other")) %>%
   view()
-  
+
+# Combinação de tabelas --------------------------------------------------------------------------------------------------------------------
+
+## Combinação de variáveis
+
+## Função bind_cols: une duas tabelas lado a lado e retorna uma tabela
+## única. O comprimento das colunas deve ser igual. Colunas não serão
+## unidas por uma id. Então verifique se ambas as tabelas estão ordenadas
+## antes de uni-las.
