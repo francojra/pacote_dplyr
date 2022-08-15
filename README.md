@@ -52,3 +52,10 @@
 - Função remove_rownames.
 11. Funções vetorizadas:
 - Função case_when.
+12. Combinação de tabelas:
+- Combinação de variáveis;
+- Dados relacionais:
+* Função left_join;
+* Função right_join;
+* Função inner_join;
+* Função full_join.
