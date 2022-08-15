@@ -313,8 +313,14 @@ library(tibble)
 a <- rownames_to_column(mtcars, var = "C")
 a
 
-## Função column_to_rownames.
+## Função column_to_rownames:
 
 ### Move coluna para linhas.
 
 column_to_rownames(a, var = "C")
+
+## Função has_rownames:
+
+### Verifica se existe linhas fora de uma coluna.
+
+has_rownames(mtcars)
