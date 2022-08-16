@@ -59,3 +59,7 @@
 * Função right_join;
 * Função inner_join;
 * Função full_join.
+- Combinando casos:
+* Função bind_rows.
+- Operações de conjuntos:
+* Função setdiff
