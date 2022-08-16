@@ -388,3 +388,16 @@ bind_rows(one, two)
 
 setdiff(one, two)
 
+## Função intersect: linhas que aparecem em ambas tabelas x e y.
+
+intersect(one, starwars)
+
+## Função union: linhas que aparecem em x ou y (linhas duplicadas
+## são removidas).
+
+union(two, starwars)
+
+## Função union: linhas que aparecem em x ou y (linhas duplicadas
+## não são removidas).
+
+union_all(two, starwars)
