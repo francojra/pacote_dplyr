@@ -381,3 +381,10 @@ starwars %>%
 one <- starwars[1:4, ]
 two <- starwars[9:12, ]
 bind_rows(one, two)
+
+## Operações de conjuntos
+
+## Função setdiff: linhas que aparecem em x, mas não em y.
+
+setdiff(one, two)
+
