@@ -371,3 +371,13 @@ starwars %>%
 ## correspondentes a ambas tabelas.
 
 ## Função full_join: une os dados e retem todos os valores e linhas.
+
+## Combinando casos (junção de tabelas por linhas)
+
+## Função bind_rows: tabelas unidas uma sobre a outra, retornando
+## uma tabela única. É estabelecido uma coluna id para ligar as duas
+## tabelas.
+
+one <- starwars[1:4, ]
+two <- starwars[9:12, ]
+bind_rows(one, two)
