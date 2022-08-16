@@ -62,4 +62,7 @@
 - Combinando casos:
 * Função bind_rows.
 - Operações de conjuntos:
-* Função setdiff
+* Função setdiff;
+* Função intersect;
+* Função union;
+* Função union_all.
